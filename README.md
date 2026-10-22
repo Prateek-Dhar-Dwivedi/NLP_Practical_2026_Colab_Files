@@ -1,5 +1,11 @@
 # 📚 Natural Language Processing (NLP) Practicals — 2026
 
+> **Student Details:**
+> - **Name:** Prateek Dhar Dwivedi  
+> - **Roll No:** 13  
+> - **Branch / Specialization:** B.Tech CSE (AI/ML)  
+> - **Semester:** 5th Semester  
+
 A comprehensive repository of interactive Google Colab notebooks covering fundamental to intermediate Natural Language Processing (NLP) practicals, pipelines, evaluations, and decision systems.
 
 ---
@@ -13,7 +19,9 @@ This repository contains hands-on practical assignments and mini-projects implem
 | **Practical 01** | **CorpusLens** — NLP Corpus Explorer | NLTK Gutenberg (`carroll-alice.txt`, Shakespeare, etc.) | Lexical diversity, vocabulary analysis, frequency distribution, word cloud, N-grams | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_01_NLP_CORPUSLENS_NLP_Corpus_Explorer.ipynb) |
 | **Practical 02** | **Smart NLP Preprocessing & Analyzer** | User Input / Raw English Corpus | Sentence/Word Tokenization, Regex Cleaning, Stopword Removal, Stemming vs. Lemmatization, POS Tagging, spaCy | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_02_NLP_Smart_NLP_Text_Preprocessing_Analyzer.ipynb) |
 | **Practical 03** | **NewsRoute** — Explainable Post Routing | 20 Newsgroups (~18k posts) | BoW vs. TF-IDF (1–2 grams), Logistic Regression, Confidence-based Abstention, Cosine Retrieval (Precision@5, MRR@10) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_03_NewsRoute_Explainable_Post_Routing.ipynb) |
-| **Practical 04** | **SpamGuard** — Text Dataset Evaluation Lab | UCI SMS Spam Collection (5,572 messages) | Stratified Train/Test Split, Preprocessing Data Leakage Prevention, Sklearn Pipelines, 5-Fold Stratified CV, Multinomial Naive Bayes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_4_SpamGuard_Dataset_Evaluation.ipynb) |
+| **Practical 04** | **SpamGuard** — Text Dataset Evaluation Lab | UCI SMS Spam Collection (5,572 messages) | Stratified Train/Test Split, Preprocessing Data Leakage Prevention, Sklearn Pipelines, 5-Fold Stratified CV, Multinomial Naive Bayes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_04_SpamGuard_Dataset_Evaluation.ipynb) |
+| **Practical 05** | **SmartSpam** — Naive Bayes vs. Logistic Regression | UCI SMS Spam Collection (5,572 messages) | BoW / TF-IDF, MultinomialNB vs. Logistic Regression Head-to-Head, Feature Weight Inspection, Interactive Checker | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_05_SmartSpam_Naive_Bayes_Logistic_Regression.ipynb) |
+| **Practical 06** | **Classifier Evaluation Lab** | Breast Cancer Wisconsin Diagnostic & Multi-class Demo | Precision, Recall, F1-score, Confusion Matrix, Imbalanced Classification, Macro vs. Weighted Averaging | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prateek-Dhar-Dwivedi/NLP_Practical_2026_Colab_Files/blob/main/Practical_06_Breast_Cancer_Classifier_Evaluation.ipynb) |
 
 ---
 
@@ -52,7 +60,7 @@ This repository contains hands-on practical assignments and mini-projects implem
 
 ---
 
-### 4. [Practical 04: SpamGuard — Text Dataset Evaluation Lab](Practical_4_SpamGuard_Dataset_Evaluation.ipynb)
+### 4. [Practical 04: SpamGuard — Text Dataset Evaluation Lab](Practical_04_SpamGuard_Dataset_Evaluation.ipynb)
 * **Objective:** Master proper evaluation methodology, cross-validation, and avoid data leakage in NLP classifiers.
 * **Core Topics:**
   * Downloading and inspecting the UCI SMS Spam Collection dataset (`ham` vs. `spam`).
@@ -62,6 +70,27 @@ This repository contains hands-on practical assignments and mini-projects implem
   * **5-Fold Stratified Cross-Validation** using `StratifiedKFold` and `cross_validate`.
   * Comprehensive classification metrics: Precision, Recall, Macro/Weighted F1-Score, and normalized Confusion Matrices.
   * Real-time interactive inference on custom user-provided SMS messages.
+
+---
+
+### 5. [Practical 05: SmartSpam — Naive Bayes vs. Logistic Regression](Practical_05_SmartSpam_Naive_Bayes_Logistic_Regression.ipynb)
+* **Objective:** Direct comparative head-to-head benchmarking between generative (MultinomialNB) and discriminative (Logistic Regression) text classifiers.
+* **Core Topics:**
+  * Vectorization pipelines preventing leakage (`TfidfVectorizer`).
+  * Generative vs. discriminative model assumptions, mechanics, and trade-offs.
+  * Comprehensive metrics comparison (Accuracy, Precision, Recall, F1-Score, normalized Confusion Matrix).
+  * Feature interpretability: Extracting top log-probability words (Naive Bayes) and highest positive/negative coefficient weights (Logistic Regression).
+  * Training set cross-validation and interactive mini spam checker for custom input messages.
+
+---
+
+### 6. [Practical 06: Classifier Evaluation Lab](Practical_06_Breast_Cancer_Classifier_Evaluation.ipynb)
+* **Objective:** Master rigorous diagnostic classifier evaluation, dissecting why accuracy alone is misleading in imbalanced contexts.
+* **Core Topics:**
+  * Evaluating classification under severe class imbalance.
+  * Granular breakdown of Confusion Matrix components (TP, FP, TN, FN) and diagnostic costs (e.g., False Negatives in medical diagnosis).
+  * Metrics comparison: Accuracy, Precision, Recall, Specificity, and F1-score across Naive Bayes and Logistic Regression.
+  * Multi-class evaluation deep-dive: Understanding mathematical distinctions and behavioral differences between **Macro Average** vs. **Weighted Average** metrics.
 
 ---
 
